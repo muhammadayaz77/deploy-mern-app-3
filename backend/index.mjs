@@ -8,7 +8,9 @@ let PORT = process.env.PORT || 8080;
 let app = express();
 connectDB();
 app.use(express.json());
-app.use(cors());
+  app.use(cors({
+    origin: 'https://deploy-mern-app-3-ui.vercel.app' // Replace with your frontend's URL
+  }));
 app.use("/api/",router)
 
 app.listen(PORT,()=>{

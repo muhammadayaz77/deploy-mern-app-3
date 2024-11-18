@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios';
-let url = 'http://localhost:8080';
+let url = 'https://deploy-mern-app-3.vercel.app';
 function Edit() {
   let navigate = useNavigate();
   let [user,setUser] = useState({

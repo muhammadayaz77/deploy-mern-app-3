@@ -3,7 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 import axios from 'axios'
 import { Link } from 'react-router-dom';
-let url = 'http://localhost:8080';
+let url = 'https://deploy-mern-app-3.vercel.app';
 
 function Table() {
   let [data,setData] = useState([]);
